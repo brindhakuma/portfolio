@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg: #323946;
+  --main-color: #7cf03d;
+  --white: #fff;
+  --gray: #aaa;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background: var(--bg-color);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 9%;
+  background: var(--second-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+nav a {
+  margin-left: 20px;
+  color: var(--white);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--main-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 100px 9% 50px;
+}
+
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.home-detail h1 {
+  font-size: 3rem;
+}
+.home-detail h2 span {
+  color: var(--main-color);
+}
+.home-detail p {
+  margin: 15px 0;
+  max-width: 600px;
+}
+.heading{
+    text-align: center;
+    padding: 20px;
+}
+.btn {
+  display: inline-block;
+  background: var(--main-color);
+  color: var(--bg-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #5ec329;
+}
+
+.sci a {
+  margin: 10px;
+  font-size: 1.5rem;
+  color: var(--white);
+  transition: color 0.3s;
+}
+.sci a:hover {
+  color: var(--main-color);
+}
+
+.home-img img {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--main-color);
+}
+
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.services-box {
+  background: var(--second-bg);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.services-box:hover {
+  transform: translateY(-10px);
+}
+.services-box i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+.resume-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 50px;
+}
+.resume-box {
+  flex: 1 1 45%;
+  
+}
+.resume-btn {
+  margin: 10px;
+  padding: 8px 15px;
+  background: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.resume-btn.active {
+  background: #5ec329;
+}
+.heading{
+    color: #7cf03d;
+}
+.resume-box h2{
+  color: #7cf03d;
+}
+footer {
+  background: var(--second-bg);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: white;
+}
+</style>
+</head>
+<body>
+     <header>
+    <a href="#" class="logo">Brindha</a>
+    
+    <nav>
+      <a href="home.html" class="active" >Home</a>
+      <a href="services.html" >Services</a>
+      <a href="resume.html" >Resume</a>
+      <a href="portfolio.html" >Portfolio</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+  </header>
+
+  <section class="resume" id="resume">
+    <div class="resume-container">
+      <div class="resume-box">
+        <h2>Why hire me?</h2>
+        <p>I combine technical expertise with creativity, problem-solving, and teamwork skills.</p>
+        <p>
+Hiring me means gaining a professional who brings a unique combination of testing expertise and development knowledge. With experience in Manual Testing, I excel in identifying defects, writing detailed test cases, and ensuring that applications meet business and user requirements with high accuracy. I understand the importance of delivering software that is not only functional but also reliable and user-friendly.  
+Along with testing, I have a solid foundation in Full-Stack Development using technologies like HTML, CSS, JavaScript, React, Python, Django, MySQL, and Git. This dual perspective allows me to collaborate effectively with developers, understand application workflows deeply, and contribute to both the development and quality assurance sides of a project.</p>
+        <div class="resume-tabs">
+          <button class="resume-btn ">Experience</button>
+          <button class="resume-btn ">Education</button>
+          <button class="resume-btn">Skills</button>
+          <button class="resume-btn">About Me</button>
+        </div>
+      </div>
+
+      <div class="resume-box1">
+        <div class="resume-detail experience ">
+         <h2 class="heading"><span>Experience</span></h2>
+        <p>Hands-on experience in manual testing of web applications with a strong focus on quality assurance. Skilled in preparing and executing test cases, identifying and reporting bugs, performing functional, regression, and system testing, and ensuring applications meet user and business requirements.</p>
+
+ </div>
+
+        <div class="resume-detail education">
+          <h2 class="heading"><span>Education</span></h2>
+            <p><strong>Bachelor of Engineering (B.E) in Electrical and Electronics Engineering</strong><br>
+AVC College of Engineering, Tamil Nadu<br>
+CGPA: 8.43
+</p>
+          </p>
+        </div>
+
+        <div class="resume-detail skills">
+          <h2 class="heading"><span>Skills</span></h2>
+          <h3>Skills</h3>
+<ul>
+  <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React</li>
+  <li><strong>Backend & Database:</strong> MySQL,Python,Django</li>
+  <li><strong>Version Control:</strong> Git</li>
+  <li><strong>Testing:</strong> Manual Testing (Functional, Regression, Integration, System Testing)</li>
+</ul>
+
+        </div>
+
+        <div class="resume-detail about">
+          <h2 class="heading">About <span>Me</span></h2>
+          <p>I'm a passionate developer who loves solving real-world problems with creative digital solutions.A passionate and detail-oriented IT professional with a background in Manual Testing and Full-Stack Development. Skilled in HTML, CSS, JavaScript, React, Python, Django, MySQL, and Git, with hands-on experience in building projects and ensuring software quality. I am a quick learner with strong problem-solving skills and always eager to explore new technologies to grow in my career.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Brindha. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
